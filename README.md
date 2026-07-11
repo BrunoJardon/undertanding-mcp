@@ -14,27 +14,6 @@ This project intentionally starts from the basics and gradually builds a complet
 - Connect a local LLM (LM Studio) with MCP.
 - Build a simple coding agent from scratch.
 
-## Current Progress
-
-### Step 1 - Connect to an MCP Server
-
-- Launch the official Filesystem MCP Server.
-- Connect using the official MCP SDK.
-- Discover the tools exposed by the server.
-
-Current output:
-
-```text
-✅ Connected!
-
-Available tools:
-- read_file
-- write_file
-- list_directory
-- search_files
-...
-```
-
 ## Planned Steps
 
 - [x] Connect to the Filesystem MCP Server
@@ -47,17 +26,6 @@ Available tools:
 - [ ] Build a simple autonomous agent
 - [ ] Add memory
 - [ ] Experiment with LoRA for Tool Use
-
-## Project Structure
-
-```
-understanding-mcp/
-│
-├── Sandbox/          # Test workspace
-├── client.js         # MCP client
-├── package.json
-└── README.md
-```
 
 ## Requirements
 
@@ -74,14 +42,8 @@ npm install
 Run:
 
 ```bash
-node client.js
+npm dev
 ```
-
-## Resources
-
-- https://modelcontextprotocol.io/
-- https://github.com/modelcontextprotocol
-- https://github.com/modelcontextprotocol/servers
 
 ## License
 
