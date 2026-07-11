@@ -19,11 +19,6 @@ await client.connect(transport);
 
 console.log("Connected");
 
-const tools = await client.listTools();
+const result = await client.callTool({ name: "list_directory", arguments: { path: "." } });
 
-console.log("Tools with details: ");
-
-for (const tool of tools.tools) {
-  console.log(JSON.stringify(tool, null, 2));
-  // console.log(tool.name,": ", tool.description);
-}
+console.log("ls: ", result);
