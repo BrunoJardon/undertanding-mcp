@@ -19,6 +19,7 @@ await client.connect(transport);
 
 console.log("Connected");
 
-const result = await client.callTool({ name: "list_directory", arguments: { path: "." } });
+// const result = await client.callTool({ name: "list_directory", arguments: { path: "." } });
+const result = await client.callTool({ name: "directory_tree", arguments: { path: "." } });
 
 console.log("ls: ", result);
